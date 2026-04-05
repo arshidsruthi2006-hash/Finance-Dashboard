@@ -102,6 +102,7 @@ expensediv.className="one";
 body.append(expensediv);
 
 let balancediv=document.createElement("div");
+ balance1=0;
 balance1=totalIncome-expense1;
 balancediv.innerText="Balance\n"+balance1;
 balancediv.id="balancediv";
