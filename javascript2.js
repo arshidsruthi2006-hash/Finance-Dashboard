@@ -389,8 +389,7 @@ document.querySelectorAll(".three").forEach(ll => {
   ll.style.display = "none";
 });
 
-let barContainer1=document.getElementById("barContainer");
-barContainer1.style.display="none";
+
 
     let incomeDiv = document.createElement("div");
 incomeDiv.innerText = "Income\n"+totalIncome;
