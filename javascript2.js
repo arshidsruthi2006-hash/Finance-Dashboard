@@ -54,8 +54,8 @@ let store = JSON.parse(localStorage.getItem("records")) || [];
        div2.id="div2";
         body.append(div2);
       
-        let totalexpense=0;
-       let totalIncome=0;
+        let totalexpense=5500;
+       let totalIncome=10000;
       store.forEach(item => {
        
         let div4 = document.createElement("div");
@@ -70,7 +70,28 @@ let store = JSON.parse(localStorage.getItem("records")) || [];
   }
     
     })
+let divincome=document.createElement("div");
+ divincome.innerText = "   \t\tdetails"+"\n\ndate\t"+"\t\t:\t"+"01-01-2025"+"\nmoney\t\t:"+"\t"+"10000"+"\ncategory\t\t:"+"\t"+"Salary"+"\ntype\t"+"\t\t:\t"+"Income";
+ divincome.id="div4";
+ body.append(divincome);
 
+
+ let divfood=document.createElement("div");
+ divfood.innerText = "   \t\tdetails"+"\n\ndate\t"+"\t\t:\t"+"01-02-2025"+"\nmoney\t\t:"+"\t"+"500"+"\ncategory\t\t:"+"\t"+"Food"+"\ntype\t"+"\t\t:\t"+"Expense";
+ divfood.id="div4";
+ body.append(divfood);
+
+
+ let divtrvel=document.createElement("div");
+ divtrvel.innerText = "   \t\tdetails"+"\n\ndate\t"+"\t\t:\t"+"01-03-2025"+"\nmoney\t\t:"+"\t"+"1000"+"\ncategory\t\t:"+"\t"+"Travel"+"\ntype\t"+"\t\t:\t"+"Expense";
+ divtrvel.id="div4";
+ body.append(divtrvel);
+
+ let divedu=document.createElement("div");
+ divedu.innerText = "   \t\tdetails"+"\n\ndate\t"+"\t\t:\t"+"01-03-2025"+"\nmoney\t\t:"+"\t"+"4000"+"\ncategory\t\t:"+"\t"+"Education"+"\ntype\t"+"\t\t:\t"+"Expense";
+ divedu.id="div4";
+ body.append(divedu);
+  
  let deletebut = document.createElement("div");
 deletebut.innerText = "Delete";
 deletebut.id = "deletebut";
@@ -121,8 +142,9 @@ body.appendChild(chartContainer);
 
 
 
-let dates = [];
-let amounts = [];
+
+let dates = ["01-01-2025","01-02-2025","01-03-2025","01-03-2025"];
+let amounts = ["10000","500","1000","4000"];
 
 store.forEach(item => {
   dates.push(item.date);              
@@ -186,7 +208,7 @@ pieContainer.appendChild(pieCanvas);
 body.appendChild(pieContainer);
 
 
-let categoryTotals = {};
+let categoryTotals = {'Food':'500','Travel':'1000','Education':'4000'};
 
 store.forEach(item => {
   if (item.type === "Expense") {
@@ -426,8 +448,9 @@ body.appendChild(chartContainer);
 
 
 
-let dates = [];
-let amounts = [];
+
+let dates = ["01-01-2025","01-02-2025","01-03-2025","01-03-2025"];
+let amounts = ["10000","500","1000","4000"];
 
 store.forEach(item => {
   dates.push(item.date);              
@@ -490,7 +513,7 @@ pieContainer.appendChild(pieCanvas);
 body.appendChild(pieContainer);
 
 
-let categoryTotals = {};
+let categoryTotals = {'Food':'500','Travel':'1000','Education':'4000'};
 
 store.forEach(item => {
   if (item.type === "Expense") {
@@ -571,7 +594,7 @@ barContainer.append(barCanvas);
 document.body.append(barContainer);
 let store = JSON.parse(localStorage.getItem("records")) || [];
 
-let categoryTotals = {};
+let categoryTotals = {'Food':'500','Travel':'1000','Education':'4000'};
 
 store.forEach(item => {
   if (item.type && item.type.toLowerCase() === "expense") {
@@ -733,8 +756,8 @@ let store = JSON.parse(localStorage.getItem("records")) || [];
        div2.innerText="History";
        div2.id="div2";
         body.append(div2);
-        let totalexpense=0;
-       let totalIncome=0;
+       let totalexpense=5500;
+       let totalIncome=10000;
       store.forEach(item => {
        
         let div4 = document.createElement("div");
@@ -750,7 +773,27 @@ let store = JSON.parse(localStorage.getItem("records")) || [];
     
     })
 
+let divincome=document.createElement("div");
+ divincome.innerText = "   \t\tdetails"+"\n\ndate\t"+"\t\t:\t"+"01-01-2025"+"\nmoney\t\t:"+"\t"+"10000"+"\ncategory\t\t:"+"\t"+"Salary"+"\ntype\t"+"\t\t:\t"+"Income";
+ divincome.id="div4";
+ body.append(divincome);
 
+
+ let divfood=document.createElement("div");
+ divfood.innerText = "   \t\tdetails"+"\n\ndate\t"+"\t\t:\t"+"01-02-2025"+"\nmoney\t\t:"+"\t"+"500"+"\ncategory\t\t:"+"\t"+"Food"+"\ntype\t"+"\t\t:\t"+"Expense";
+ divfood.id="div4";
+ body.append(divfood);
+
+
+ let divtrvel=document.createElement("div");
+ divtrvel.innerText = "   \t\tdetails"+"\n\ndate\t"+"\t\t:\t"+"01-03-2025"+"\nmoney\t\t:"+"\t"+"1000"+"\ncategory\t\t:"+"\t"+"Travel"+"\ntype\t"+"\t\t:\t"+"Expense";
+ divtrvel.id="div4";
+ body.append(divtrvel);
+
+ let divedu=document.createElement("div");
+ divedu.innerText = "   \t\tdetails"+"\n\ndate\t"+"\t\t:\t"+"01-03-2025"+"\nmoney\t\t:"+"\t"+"4000"+"\ncategory\t\t:"+"\t"+"Education"+"\ntype\t"+"\t\t:\t"+"Expense";
+ divedu.id="div4";
+ body.append(divedu);
 
     let incomeDiv = document.createElement("div");
 incomeDiv.innerText = "Income\n"+totalIncome;
@@ -786,8 +829,9 @@ body.appendChild(chartContainer);
 
 
 
-let dates = [];
-let amounts = [];
+let dates = ["01-01-2025","01-02-2025","01-03-2025","01-03-2025"];
+let amounts = ["10000","500","1000","4000"];
+
 
 store.forEach(item => {
   dates.push(item.date);              
@@ -851,7 +895,7 @@ pieContainer.appendChild(pieCanvas);
 body.appendChild(pieContainer);
 
 
-let categoryTotals = {};
+let categoryTotals = {'Food':'500','Travel':'1000','Education':'4000'};
 
 store.forEach(item => {
   if (item.type === "Expense") {
@@ -924,17 +968,6 @@ behavior:"smooth"
   })
 })
 
-//    let deletebut=document.createElement("div");
-//    deletebut.innerText="Delete";
-//    deletebut.id="deletebut";
-//    body.append(deletebut);
-
-//  document.getElementById("deletebut").onclick = function () {
-//   localStorage.clear(); // deletes only this
-// };
-//       })
-
-
 
 element1.addEventListener("click",()=>{
 document.querySelectorAll(".two").forEach(el => {
@@ -980,8 +1013,8 @@ body.appendChild(chartContainer);
 
 
 
-let dates = [];
-let amounts = [];
+let dates = ["01-01-2025","01-02-2025","01-03-2025","01-03-2025"];
+let amounts = ["10000","500","1000","4000"];
 
 store.forEach(item => {
   dates.push(item.date);              
@@ -1044,7 +1077,7 @@ pieContainer.appendChild(pieCanvas);
 body.appendChild(pieContainer);
 
 
-let categoryTotals = {};
+let categoryTotals = {'Food':'500','Travel':'1000','Education':'4000'};
 
 store.forEach(item => {
   if (item.type === "Expense") {
@@ -1126,7 +1159,7 @@ barContainer.append(barCanvas);
 document.body.append(barContainer);
 let store = JSON.parse(localStorage.getItem("records")) || [];
 
-let categoryTotals = {};
+let categoryTotals = {'Food':'500','Travel':'1000','Education':'4000'};
 
 store.forEach(item => {
   if (item.type && item.type.toLowerCase() === "expense") {
@@ -1137,7 +1170,7 @@ store.forEach(item => {
   }
 });
 
-// convert to arrays
+
 let categories = Object.keys(categoryTotals);
 let values = Object.values(categoryTotals);
 new Chart(barCanvas, {
