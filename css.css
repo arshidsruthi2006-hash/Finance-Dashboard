@@ -401,63 +401,63 @@ background-color: rgb(166, 163, 163);
 }
 
 
-@media (max-width : 600px){
-@media(max-height : 800px){
+@media (max-width : 768px){
+
 
 #login{
-    height:300px;
-    width:300px;
-    border:2px solid rgb(18, 18, 246);
-    border-radius:30px;
-    margin-left:120px;
-    margin-top:150px;
-    background-color: rgb(18, 18, 246);
-}
-#wellcome{
-    height:25px;
-    width:300px;
-    margin-left:25px;
-    font-size:20px;
-    position: relative;
-    top:60px;
-    color:white;
-    
-}
-#select{
-      height:25px;
-    width:200px;
-    margin-left:40px;
-    font-size:20px;
-    position: relative;
-    top:90px; 
-    color:white;
-}
-#user-admin{
- height:25px;
-    width:200px;
-    margin-left:40px;
-    font-size:20px;
-    position: relative;
-    top:110px; 
-}
-#select-option{
-    border:2px solid rgb(18, 18, 246);
-    border-radius:5px;
-     height:30px;
-    width:200px;
-    font-size:15px;
-}
-#submit{
-     height:30px;
-    width:200px;
-    margin-left:40px;
-    font-size:15px;
-    border:2px solid  rgb(18, 18, 246);
-    border-radius:5px;
-    position: relative;
-    top:160px; 
-}
-
+        height:300px;
+        width:300px;
+        border:2px solid rgb(18, 18, 246);
+        border-radius:30px;
+        position: absolute;
+        right:90px;
+        top:50px;
+        background-color: rgb(18, 18, 246);
+    }
+ #wellcome{
+        height:100px;
+        width:300px;
+        margin-left:10px;
+        font-size:20px;
+        position: relative;
+        top:30px;
+        color:white;
+        
+    }
+ #select{
+        height:50px;
+        width:300px;
+        margin-left:10px;
+        font-size:20px;
+        position: relative;
+        top:0px; 
+        color:white;
+    }
+ #user-admin{
+    height:30px;
+        width:300px;
+        margin-left:5px;
+        font-size:15px;
+        position: relative;
+        top:5px; 
+    }
+ #select-option{
+        border:2px solid rgb(18, 18, 246);
+        border-radius:5px;
+        height:30px;
+        width:280px;
+        font-size:15px;
+    }
+   #submit{
+        height:30px;
+        width:280px;
+        margin-left:5px;
+        font-size:15px;
+        border:2px solid  rgb(18, 18, 246);
+        border-radius:5px;
+        position: relative;
+        top:30px; 
+    } 
 #navigation{
     height:700px;
     width: 150px;
@@ -639,20 +639,21 @@ font-size:15px;
 }
 
 
-#income{
+#expensediv{
     display:flex;
     justify-content: center;
     align-items: center;
-    height:70px;
+     height:70px;
     width:100px;
     color:black;
     font-size:15px;
-    background-color: rgb(183, 185, 251);
+    background-color: rgb(255, 159, 159);
     border-radius:10px;
-    border:2px solid  rgb(183, 185, 251);
+    border:2px solid rgb(255, 159, 159);
     position: absolute;
     top:30px;
-    left:170px;
+    left:400px;
+  
 }
 
 #expensediv{
@@ -683,8 +684,8 @@ font-size:15px;
     border-radius:10px;
     border:2px solid rgb(180, 249, 190);
     position: absolute;
-    top:120px;
-    left:260px;
+    top:125px;
+    left:285px;
   
 }
 #container {
@@ -759,5 +760,4 @@ background-color: rgb(166, 163, 163);
 }
 
 
-}
 }
