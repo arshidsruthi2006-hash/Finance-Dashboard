@@ -2,11 +2,11 @@
 
 ## About
 
--This is a simple finance dashboard website to track income, expenditure, and balance.
--When the website opens, the user needs to select a role:
-   -User
-   -Admin
--After selecting the role and clicking submit, the dashboard will open.
+- This is a simple finance dashboard website to track income, expenditure, and balance.
+- When the website opens, the user needs to select a role:
+    - User
+    - Admin
+- After selecting the role and clicking submit, the dashboard will open.
 
 ## How it works
 -When the website opens → role selection page is shown
