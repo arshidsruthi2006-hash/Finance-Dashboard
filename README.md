@@ -14,7 +14,7 @@
 - After clicking submit → dashboard loads
 - If the page is refreshed → it goes back to role selection
 
-**User**
+## User
 
 ### User can access:
 - Dashboard
@@ -29,7 +29,7 @@
 - Line chart shows how balance changes over time
 - User can also view all transaction history.
 
-**Admin**
+## Admin
 
 ### Admin can access:
 - Dashboard
